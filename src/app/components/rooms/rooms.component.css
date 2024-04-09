@@ -1,28 +1,31 @@
-.table-custom {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .table-custom th, .table-custom td {
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  .table-custom thead {
-    background-color: #343a40;
-    color: #fff;
-  }
-  
-  .table-custom tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .table-custom tbody tr:hover {
-    background-color: #ddd;
-  }
-  
-  .table-custom img {
-    max-width: 100px;
-    max-height: 100px;
-  }
-  
+.card {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: calc(100% - 200px);
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar-toggler:hover {
+  color: #ffc107;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffc107;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ffca2c;
+}

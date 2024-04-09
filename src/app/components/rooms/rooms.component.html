@@ -1,24 +1,18 @@
-<table class="table table-bordered table-striped">
-    <thead class="thead-dark">
-      <tr>
-        <th>ID</th>
-        <th>Image</th>
-        <th>Room Number</th>
-        <th>Status</th>
-        <th>Type</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let room of rooms">
-        <td>{{ room.id }}</td>
-        <td>
-          <img *ngIf="room.imageUrl" [src]="room.imageUrl" alt="Room Image" style="max-width: 100px; max-height: 100px;">
-        </td>
-        <td>{{ room.roomNumber }}</td>
-        <td>{{ room.roomStatus }}</td>
-        <td>{{ room.roomType }}</td>
-        <td>{{ room.price }}</td>
-      </tr>
-    </tbody>
-  </table>
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let room of rooms">
+      <div class="card mb-3">
+        <img *ngIf="room.imageUrl" [src]="room.imageUrl" class="card-img-top" alt="Room Image">
+        <div class="card-body">
+          <h5 class="card-title">Room {{ room.roomNumber }}</h5>
+          <p class="card-text">Status: {{ room.roomStatus !== undefined ? getRoomStatus(room.roomStatus) : 'Unknown' }}</p>
+          <p class="card-text">Type: {{ room.roomType !== undefined ? getRoomType(room.roomType) : 'Unknown' }}</p>
+          <p class="card-text">Price: {{ room.price }}</p>
+          <a routerLink="booking-place" routerLinkActive="active" ariaCurrentWhenActive="page">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
