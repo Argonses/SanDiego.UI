@@ -5,7 +5,7 @@ export class Room {
     id?: number;
     imageUrl?: string;
     roomNumber?: number;
-    roomStatus?: RoomStatus;
-    roomType?: RoomType;
+    roomStatus?: RoomStatus | number;
+    roomType?: RoomType | number; 
     price?: number;
 }
