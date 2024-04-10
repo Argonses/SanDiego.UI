@@ -1,1 +1,29 @@
-<p>booking-room works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel San Diego</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div *ngIf="room" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="room-details">
+          <h2 class="room-number">{{ room.roomNumber }}</h2>
+          <p class="room-info">Status: {{ room.roomStatus !== undefined ? getRoomStatus(room.roomStatus) : 'Unknown' }}</p>
+          <p class="room-info">Type: {{ room.roomType !== undefined ? getRoomType(room.roomType) : 'Unknown' }}</p>
+          <p class="room-info">Price: {{ room.price }}</p>
+          <button class="room-btn">Book</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img *ngIf="room.imageUrl" [src]="room.imageUrl" class="img-fluid room-image" alt="Room Image">
+      </div>
+    </div>
+  </div>
+</body>
+

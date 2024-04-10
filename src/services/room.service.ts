@@ -17,5 +17,9 @@ export class RoomService {
   public getRooms() : Observable<Room[]> {
     return this.httpCLient.get<Room[]>(`${enviroment.apiUrl}/${this.url}`)
   }
+
+  public getRoom(roomId: number) : Observable<Room> {
+    return this.httpCLient.get<Room>(`${enviroment.apiUrl}/${this.url}/${roomId}`)
+  }
 }
 

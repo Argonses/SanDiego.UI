@@ -10,7 +10,7 @@
           <p class="card-text">Status: {{ room.roomStatus !== undefined ? getRoomStatus(room.roomStatus) : 'Unknown' }}</p>
           <p class="card-text">Type: {{ room.roomType !== undefined ? getRoomType(room.roomType) : 'Unknown' }}</p>
           <p class="card-text">Price: {{ room.price }}</p>
-          <a routerLink="booking-place" routerLinkActive="active" ariaCurrentWhenActive="page">Book Now</a>
+          <a [routerLink]="['/booking-place', room.id]" routerLinkActive="active" ariaCurrentWhenActive="page">Book Now</a>
         </div>
       </div>
     </div>
