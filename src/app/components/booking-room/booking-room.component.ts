@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Review } from 'src/models/Review';
 import { Room } from 'src/models/Room';
 import { RoomStatus } from 'src/models/RoomStatus';
 import { RoomType } from 'src/models/RoomType';
@@ -18,6 +19,7 @@ export class BookingRoomComponent {
     private route: ActivatedRoute,
     private roomService: RoomService
   ) { }
+  
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {

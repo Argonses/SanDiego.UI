@@ -10,7 +10,6 @@ const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'rooms', component: RoomsComponent},
   {path: 'about-us', component: AboutUsComponent},
-  {path: 'contact', component: ContactComponent},
   {path: 'booking-place/:roomId', component: BookingRoomComponent}
 ];
 

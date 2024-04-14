@@ -9,6 +9,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { BookingRoomComponent } from './components/booking-room/booking-room.component';
+import { FormsModule } from '@angular/forms';
+import { AddReviewComponent } from './components/add-review/add-review.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import { BookingRoomComponent } from './components/booking-room/booking-room.com
     AboutUsComponent,
     ContactComponent,
     NavBarComponent,
-    BookingRoomComponent
+    BookingRoomComponent,
+    AddReviewComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

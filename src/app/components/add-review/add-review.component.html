@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel San Diego</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+<div class="add-review-form">
+    <h3>Add Review</h3>
+    <form (submit)="submitReview()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" class="form-control" [(ngModel)]="newReview!.firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" [(ngModel)]="newReview!.lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Email:</label>
+        <textarea id="message" name="message" class="form-control" [(ngModel)]="newReview!.email" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="form-control" [(ngModel)]="newReview!.message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>

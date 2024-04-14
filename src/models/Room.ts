@@ -1,3 +1,4 @@
+import { Review } from "./Review";
 import { RoomStatus } from "./RoomStatus";
 import { RoomType } from "./RoomType";
 
@@ -8,4 +9,5 @@ export class Room {
     roomStatus?: RoomStatus | number;
     roomType?: RoomType | number; 
     price?: number;
+    reviews?: Review[];
 }
