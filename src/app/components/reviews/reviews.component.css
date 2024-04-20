@@ -1,37 +1,35 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-  }
-  
-  th, td {
-    padding: 12px 15px;
-  }
-  
-  tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  
-  tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  
-  tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-  }
-  
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: calc(33.33% - 16px); 
+  box-sizing: border-box;
+}
+
+.review-header {
+  margin-bottom: 12px;
+}
+
+.review-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.review-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.review-body p {
+  margin: 0;
+  font-size: 16px;
+  color: #444;
+}

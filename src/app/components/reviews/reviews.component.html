@@ -1,18 +1,12 @@
-<table>
-    <thead>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>Message</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let review of reviews">
-        <td>{{ review.firstName }}</td>
-        <td>{{ review.lastName }}</td>
-        <td>{{ review.email }}</td>
-        <td>{{ review.message }}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="reviews">
+  <div class="review-card" *ngFor="let review of reviews">
+    <div class="review-header">
+      <h2>{{ review.firstName }} {{ review.lastName }}</h2>
+      <p>{{ review.email }}</p>
+    </div>
+    <div class="review-body">
+      <p>{{ review.message }}</p>
+    </div>
+  </div>
+</div>
+
